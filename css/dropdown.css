@@ -1,0 +1,121 @@
+.dropdown {
+    background-color: var(--verde);
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.dropdown-titulo {
+    display: none;
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--amarelo);
+
+}
+
+.dropdown>p {
+    color: white;
+    text-align: left;
+    line-height: 22px;
+    margin-top: 40px;
+}
+
+.caixas {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caixas-conteudo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    width: 302px;
+    position: relative;
+
+}
+
+.caixa-imagem {
+    background-color: white;
+    border-radius: 9px 9px 0 0;
+    width: 100%;
+    height: 234px;
+}
+
+.caixa-imagem>img {
+    padding: 41px 0 22px 0;
+}
+
+.caixa-aberta {
+    display: none;
+    background-color: var(--amarelo);
+    border-radius: 0 0 20px 20px;
+    text-align: left;
+    line-height: 22px;
+    color: white;
+    padding: 81px 28px 54px 28px;
+    position: relative;
+    top: -40px;
+}
+
+.caixa-fechada {
+    background-color: var(--roxo);
+    border-radius: 0 0 9px 9px;
+    display: block;
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.botao-fechado {
+    background: url("../icones/icon-arrow-down.svg") no-repeat center;
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 54px;
+    width: 54px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -12px;
+    margin: auto auto;
+    z-index: 2;
+}
+
+.botao-aberto {
+    background: url("../icones/icon-arrow-up.svg") no-repeat center;
+    background-color: var(--roxo);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 54px;
+    width: 54px;
+}
+
+.dropdown-arco {
+    background: url("../icones/icon-brown.svg") no-repeat center / cover;
+    width: 107px;
+    height: 60px;
+    position: relative;
+    right:  -330px;
+    bottom: -10px;
+    z-index: 2;
+}
+
+
+@media screen and (min-width: 1366px) {
+    .dropdown {
+        padding: 70px 211px;
+    }
+
+    .dropdown-titulo {
+        display: block;
+    }
+
+    .caixas {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

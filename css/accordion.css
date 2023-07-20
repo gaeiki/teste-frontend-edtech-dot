@@ -1,0 +1,91 @@
+.accordion {
+    background-color: #E5E5E5;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.accordion>p {
+    color: var(--cinza-claro);
+    text-align: left;
+    line-height: 22px;
+}
+
+.accordion-menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.accordion-card {
+    margin-top: 35px;
+
+}
+
+.accordion-titulo-fechado {
+    color: white;
+    background-color: var(--roxo);
+    border-radius: 0 20px 20px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 76px 10px 7px;
+    line-height: 24px;
+    position: relative;
+    z-index: 2;
+}
+
+.accordion-botao-fechado {
+    background: url("../icones/icon-plus-rounded.png") no-repeat center;
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 110%;
+    width: 75px;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+}
+
+.accordion-titulo-aberto {
+    color: white;
+    background-color: var(--verde);
+    border-radius: 0 20px 20px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 76px 10px 7px;
+    line-height: 24px;
+    position: relative;
+}
+
+.accordion-botao-aberto {
+    background: url("../icones/icon-minus-rounded.png") no-repeat center;
+    background-color: var(--roxo);
+    border: none;
+    cursor: pointer;
+    height: 110%;
+    width: 75px;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+}
+
+.texto-aberto {
+    display: none;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    color: var(--cinza-claro);
+    font-size: 20px;
+    line-height: 22px;
+    padding: 80px 41px 56px 41px;
+    position: relative;
+    top: -25px;
+}
+
+@media screen and (min-width: 1366px) {
+    .accordion {
+        padding: 35px 211px;
+    }
+}

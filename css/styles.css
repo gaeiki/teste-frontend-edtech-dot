@@ -1,0 +1,25 @@
+@import url("./banner.css");
+@import url("./intro.css");
+@import url("./dropdown.css");
+@import url("./ambiente.css");
+@import url("./circulo.css");
+@import url("./accordion.css");
+@import url("./slider.css");
+@import url("./footer.css");
+
+:root {
+    --chumbo: #353535;
+    --roxo: #7A2B58;
+    --laranja: #FF3737;
+    --amarelo: #FFCC33;
+    --cinza-claro: #707070;
+    --verde: #03B5B0;
+    --fonte-principal: "Raleway", sans-serif;
+}
+
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}

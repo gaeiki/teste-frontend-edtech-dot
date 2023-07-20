@@ -1,0 +1,46 @@
+.ambiente {
+    background-color: var(--chumbo);
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.ambiente-titulo {
+    color: var(--verde);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.ambiente img {
+    position: relative;
+    margin-top: 35px;
+    right: 20px;
+    width: 100vw;
+}
+
+.ambiente p {
+    color: white;
+    text-align: left;
+    margin-top: 35px;
+    line-height: 22px;
+}
+
+@media screen and (min-width: 1366px) {
+    .ambiente {
+        padding: 35px 211px;
+    }
+
+    .ambiente-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .ambiente-container>img {
+        order: 2;
+        width: 462px;
+    }
+
+    .ambiente-container>p {
+        width: 406px;
+    }
+}

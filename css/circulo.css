@@ -1,0 +1,124 @@
+.circulo {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.circulo>p {
+    color: var(--cinza-claro);
+    text-align: left;
+    line-height: 22px;
+}
+
+.circulo-fluxo {
+    position: relative;
+    width: 320px;
+    margin: 40px auto;
+}
+
+.circulo-fluxo img {
+    position: relative;
+    width: 320px;
+}
+
+.circulo-botao {
+    background: url("../icones/icon-plus.svg") no-repeat center;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.circulo-botao-aberto {
+    background: url("../icones/icon-minos.svg") no-repeat center;
+    background-color: var(--roxo);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.circulo-botao:nth-of-type(1) {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.circulo-botao:nth-of-type(2) {
+    position: absolute;
+    top: 77%;
+    left: 8%;
+}
+
+.circulo-botao:nth-of-type(3) {
+    position: absolute;
+    top: 77%;
+    left: 84%;
+}
+
+.circulo-opcao-amarela, .circulo-opcao-vermelho, .circulo-opcao-cinza {
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 180px;
+    width: 180px;
+	text-align: center;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    margin: 0px auto;
+    position: absolute;
+    left: 50%;
+    top: 51%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.circulo-opcao-amarela{
+    background-color: var(--amarelo);
+}
+
+.circulo-opcao-vermelho{
+    background-color: var(--laranja);
+}
+.circulo-opcao-cinza{
+    background-color: var(--cinza-claro);
+}
+
+strong {
+    font-weight: bold;
+}
+
+.circulo-opcao-selecionada>p{
+    font-size: 12px;
+    padding: 15%
+}
+
+@media screen and (min-width: 1366px) {
+    .circulo {
+        padding: 35px 211px;
+    }
+
+    .circulo-fluxo {
+        position: relative;
+        width: 600px;
+        margin: 40px auto;
+    }
+    
+    .circulo-fluxo img {
+        position: relative;
+        width: 600px;
+    }
+
+    .circulo-opcao-amarela, .circulo-opcao-vermelho, .circulo-opcao-cinza {
+        height: 335px;
+        width: 335px;
+    }
+
+    .circulo-botao {
+        height: 54px;
+        width: 54px;
+    }
+}

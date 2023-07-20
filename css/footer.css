@@ -1,0 +1,30 @@
+.rodape {
+    position: relative;
+    background-color: var(--roxo);;
+    text-align: center;
+    height: 20vh;
+}
+
+.rodape>a {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rodape>a>img {
+    height: 10vh;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape>a>img {
+        height: 7vh;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .rodape>a>img {
+        height: 10vh;
+    }
+}
